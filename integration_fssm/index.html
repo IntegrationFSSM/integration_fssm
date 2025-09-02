@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JLZ805P6F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3JLZ805P6F');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
+  <title>Semaine d'Intégration - FSSM</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style_slider.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="#">Integration <span>FSSM</span></a>
+      </h1>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link">Accueil</a></li>
+          <li><a href="#about" class="navbar-link">À propos</a></li>
+          <li><a href="#clubs" class="navbar-link">Clubs</a></li>
+          <li><a href="#comite" class="navbar-link">Direction</a></li>
+          <li><a href="#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          
+          <div class="hero-text">
+            <h1 class="hero-title">Integration <span>FSSM</span></h1>
+            <div class="hero-subtitle">
+              <span class="highlight">Accueil, Découverte et Intégration des Nouveaux Étudiants de la FSSM</span>
+            </div>
+            <div class="hero-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              1 - 14 septembre 2025
+            </div>
+            <div class="hero-location">
+              <ion-icon name="location-outline"></ion-icon>
+              Faculté des Sciences Semlalia Marrakech
+            </div>
+            <a href=".\assets\pdf\ARTICLE 1_Offre de formation 2025-2026 DB.pdf" class="hero-cta">
+              Découvrir l'offre de formation
+            </a>
+          </div>
+          <div class="hero-image">
+            <div class="slider-container" id="imageSlider">
+              <!-- Images will be added via JavaScript -->
+            </div>
+            <button class="slider-arrow prev" id="prevBtn">&#10094;</button>
+            <button class="slider-arrow next" id="nextBtn">&#10095;</button>
+            <div class="slider-controls" id="sliderDots"></div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">À propos de la Semaine d'Intégration et d'Inscription FSSM</h2>
+        <div class="about-content">
+          <div class="about-images">
+            <div class="image-grid">
+              <img src="assets/images/images (1).jpeg" alt="Étudiants travaillant sur des projets innovants" class="about-img">
+              <img src="assets/images/images (2).jpeg" alt="Atelier d'intelligence artificielle" class="about-img">
+              <img src="assets/images/téléchargé.jpeg" alt="Atelier d'intelligence artificielle" class="about-img">
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 class="about-subtitle">Bienvenue dans votre nouvelle aventure universitaire</h3>
+            <p class="about-description">
+              Tu viens de rejoindre la grande famille de la FSSM ? Félicitations ! Cette semaine d'intégration et d'inscription est organisée spécialement pour toi. On sait que commencer l'université peut être un peu stressant, c'est pourquoi nous avons préparé cette semaine pour t'aider à te sentir rapidement chez toi à la faculté.
+            </p>
+            <p class="about-description">
+              Pendant ces deux semaines, tu vas découvrir les différentes spécialités qu'on propose, rencontrer d'autres étudiants comme toi, visiter nos laboratoires et nos espaces d'étude. Tu pourras aussi connaître les clubs et associations - il y en a pour tous les goûts ! Et bien sûr, on sera là pour t'accompagner dans toutes tes démarches d'inscription.
+            </p>
+            <p class="about-description">
+              Le plus important ? Tu vas rencontrer plein de nouvelles personnes et peut-être même tes futurs meilleurs amis d'université ! Alors n'hésite pas, viens nous rejoindre pour bien démarrer cette belle aventure à la FSSM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Clubs -->
+    <section class="competitions" id="clubs">
+      <div class="container">
+        <h2 class="section-title">Clubs</h2>
+        <p class="section-description">Découvrez les différents clubs de la FSSM pour enrichir votre vie étudiante</p>
+        
+        <div class="speakers-grid">
+          <!-- Club IT -->
+          <a href="clubs/it-club.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/itclub.png" alt="IT Club">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">IT Club</h3>
+              <p class="speaker-name">Rejoignez le club informatique pour développer vos compétences en programmation et technologies.</p>
+            </div>
+          </a>
+          
+          <!-- Club Environnement -->
+          <a href="clubs/eves.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/eves.jpg" alt="EVES">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">EVES</h3>
+              <p class="speaker-name">Club d'environnement pour sensibiliser à l'écologie et organiser des actions durables.</p>
+            </div>
+          </a>
+          
+          <!-- Club Échecs -->
+          <a href="clubs/chess-club.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/chessclubfssm.jpg" alt="Chess Club">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Chess Club FSSM</h3>
+              <p class="speaker-name">Développez votre stratégie et participez aux compétitions d'échecs inter-universitaires.</p>
+            </div>
+          </a>
+          
+          <!-- Club Entrepreneuriat -->
+          <a href="clubs/enactus.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/enactus.jpg" alt="Enactus">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Enactus FSSM</h3>
+              <p class="speaker-name">Club d'entrepreneuriat social pour développer des projets à impact positif.</p>
+            </div>
+          </a>
+          
+          <!-- Club Astronomie -->
+          <a href="clubs/hepac.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/hepac.jpg" alt="HEPAC">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">HEPAC</h3>
+              <p class="speaker-name">Explorez les mystères de l'univers avec le club d'astronomie et d'astrophysique.</p>
+            </div>
+          </a>
+          
+          <!-- Club Sport -->
+          <a href="clubs/sport-club.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/sport.jpg" alt="Sport Club">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Sport Club FSSM</h3>
+              <p class="speaker-name">Participez aux activités sportives et aux compétitions pour rester en forme.</p>
+            </div>
+          </a>
+          
+          <!-- Club Théâtre -->
+          <a href="clubs/empreinte.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/theatre.png" alt="Empreinte">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Empreinte</h3>
+              <p class="speaker-name">Exprimez votre créativité et développez vos talents artistiques avec le club théâtre.</p>
+            </div>
+          </a>
+          
+          <!-- Club Robotique -->
+          <a href="clubs/raic.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/raic.jpg" alt="RAIC">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">RAIC</h3>
+              <p class="speaker-name">Club de robotique et intelligence artificielle pour les passionnés de technologies avancées.</p>
+            </div>
+          </a>
+          
+          <!-- Club Chorale -->
+          <a href="clubs/chorale.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/chorale.jpg" alt="Chorale">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Chorale FSSM</h3>
+              <p class="speaker-name">Rejoignez la chorale pour partager votre passion de la musique et du chant.</p>
+            </div>
+          </a>
+          
+          <!-- Club Soutien -->
+          <a href="clubs/club-soutien.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/soutien.jpg" alt="Club Soutien">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Club Soutien</h3>
+              <p class="speaker-name">Entraide et accompagnement des étudiants dans leur parcours académique.</p>
+            </div>
+          </a>
+          
+          <!-- Vitalis Club Santé -->
+          <a href="clubs/vitalis.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/vitalis.jpg" alt="Vitalis">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Vitalis Club Santé</h3>
+              <p class="speaker-name">Promotion du bien-être et de la santé mentale et physique des étudiants.</p>
+            </div>
+          </a>
+          
+          <!-- Club Alumni -->
+          <a href="clubs/alumni.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/Alumni.jpg" alt="Club Alumni">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Club Alumni</h3>
+              <p class="speaker-name">Réseau des anciens étudiants pour le mentoring et l'orientation professionnelle.</p>
+            </div>
+          </a>
+          
+          <!-- Club Hult Prize -->
+          <a href="clubs/hult-prize.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/hultprize.jpg" alt="Hult Prize">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Club Hult Prize</h3>
+              <p class="speaker-name">Participez à la plus grande compétition d'entrepreneuriat social au monde.</p>
+            </div>
+          </a>
+          
+          <!-- Club NOI -->
+          <a href="clubs/noi.html" class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/NOI.jpg" alt="NOI">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">NOI - Nomads of Innovation</h3>
+              <p class="speaker-name">Innovation et créativité pour développer des solutions technologiques disruptives.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- Section Direction Générale -->
+    <section class="comite" id="comite">
+      <div class="container">
+        <h2 class="section-title">Direction Générale</h2>
+        <p class="section-description">L'équipe dirigeante de la Faculté des Sciences Semlalia</p>
+        
+        <!-- Direction de la Faculté -->
+        <div class="comite-section">
+          <h3 class="comite-title">Direction de la Faculté</h3>
+          <div class="comite-grid">
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/elmoudden.png" alt="Doyen de la FSSM">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. El Hassan El Mouden</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Doyen de la FSSM</p>
+              </div>
+            </div>
+            
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/ouazani.jpeg" alt="Vice-Doyen">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Naaila OUAZZANI</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Vice-Doyen Chargé de la Recherche Scientifique et de la Coopération</p>
+              </div>
+            </div>
+            
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/adahchour.jpg" alt="Vice-Doyen">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Abderrahim Adahchour</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Vice-Doyen Chargé des Affaires Pédagogiques</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/bouziane.jpg" alt="Vice-Doyen">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Driss Bouziane</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Vice-Doyen Chargé de la Formation Continue et des Diplômes</p>
+              </div>
+            </div>
+            
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/13.jpg" alt="Secrétaire Général">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Mme EL Himas Samira</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Secrétaire Général de la FSSM</p>
+              </div>
+            </div>
+            
+        
+            
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/14.jpg" alt="Service de Scolarité">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Mme Fatima Araji</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Chef de Service Scolarité</p>
+              </div>
+            </div>
+            
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/12.png" alt="Centre d'Accueil">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Mme Zineb CHAQUIQ EL BADR</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Chef du Centre d'Accueil Formation et Orientation des Étudiants</p>
+              </div>
+            </div>
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/speaker/tarik.jpeg" alt="Chef de la Communication">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;"> Mr Tarik Khalla</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Chef du Service de la Communication</p>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-description">Pour tout information, contactez nos responsables</p>
+        
+        <div class="comite-grid">
+          <div class="comite-card">
+            <div class="comite-image-circle">
+              <img src="assets/images/comite/12.png" alt="Superviseur Semaine d'Intégration">
+            </div>
+            <div class="comite-info">
+              <h4 class="comite-name" style="color: #ff6b6b;">Mme Zineb El Chaquiq Badre</h4>
+              <p class="comite-role" style="color: #1a5f7a;">Superviseur de la Semaine d'Intégration</p>
+              <p class="comite-email" style="color: #666; font-size: 0.9rem; margin-top: 5px;">z.chaquiq@uca.ac.ma </p>
+            </div>
+          </div>
+          
+          <div class="comite-card">
+            <div class="comite-image-circle">
+              <img src="assets/images/14.jpg" alt="Superviseur Inscription Étudiants">
+            </div>
+            <div class="comite-info">
+              <h4 class="comite-name" style="color: #ff6b6b;">Mme Fatima El Araji</h4>
+              <p class="comite-role" style="color: #1a5f7a;">Superviseur de la Semaine d'Intégration</p>
+              <p class="comite-email" style="color: #666; font-size: 0.9rem; margin-top: 5px;">f.elaraji@uca.ac.ma </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Bouton Go Top -->
+  <a href="#" class="go-top-btn" data-go-top>
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h1 class="logo">
+            <a href="#">Semaine d'<span>Intégration</span></a>
+          </h1>
+        </div>
+        <div class="footer-right">
+          <p>&copy; 2025 Semaine d'Intégration FSSM. Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script_slider.js"></script>
+  <style>
+    @media (min-width: 768px) {
+      .hide-on-mobile {
+        display: block !important;
+      }
+      .mobile-schedule-container {
+        display: none;
+      }
+    }
+  </style>
+</body>
+</html>

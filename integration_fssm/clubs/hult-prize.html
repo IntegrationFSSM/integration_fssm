@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JLZ805P6F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3JLZ805P6F');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
+  <title>Club Hult Prize - Integration FSSM</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style_slider.css">
+  
+  <style>
+    .detail-content {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .detail-section {
+      margin-bottom: 30px;
+    }
+    
+    .detail-section h3 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+    }
+    
+    .detail-section p {
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+    
+    .detail-section ul {
+      margin-bottom: 15px;
+      padding-left: 20px;
+    }
+    
+    .detail-section li {
+      margin-bottom: 10px;
+    }
+    
+    .detail-cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .register-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 35px;
+      background: var(--primary-color);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .register-btn:hover {
+      background: var(--secondary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .club-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="../index.html">Integration <span>FSSM</span></a>
+      </h1>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="../index.html#home" class="navbar-link">Accueil</a></li>
+          <li><a href="../index.html#about" class="navbar-link">À propos</a></li>
+          <li><a href="../index.html#clubs" class="navbar-link">Clubs</a></li>
+          <li><a href="../index.html#comite" class="navbar-link">Direction</a></li>
+          <li><a href="../index.html#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main style="margin-top: 100px;">
+    <section class="about">
+      <div class="container">
+        <div class="club-logo-circle" style="text-align: center; margin-bottom: 30px;">
+          <div class="speaker-image-circle" style="width: 120px; height: 120px; margin: 0 auto;">
+            <img src="../assets/images/comite/hultprize.jpg" alt="Club Hult Prize FSSM" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <h1 class="section-title">Club Hult Prize FSSM</h1>
+        
+        <div class="detail-content">
+          <div class="detail-section">
+            <h3>À propos du Club Hult Prize</h3>
+            <p>
+              Le Club Hult Prize FSSM prépare les étudiants à participer à la plus grande compétition d'entrepreneuriat social au monde. Avec un prix d'un million de dollars, Hult Prize challenge les jeunes entrepreneurs à résoudre les problèmes sociaux les plus urgents de notre époque.
+            </p>
+          </div>
+          
+          <div class="detail-section">
+            <h3>🏆 Nos Activités</h3>
+            
+            <div class="activity-item">
+              <h4>💼 Formations Entrepreneuriales</h4>
+              <p>Développement de compétences essentielles en business, innovation et gestion de projet pour créer des entreprises à impact social.</p>
+            </div>
+            
+            <div class="activity-item">
+              <h4>🎨 Design Thinking</h4>
+              <p>Méthodologies créatives et innovantes pour identifier, analyser et résoudre des problèmes sociaux complexes de manière efficace.</p>
+            </div>
+            
+            <div class="activity-item">
+              <h4>🎤 Pitch Training</h4>
+              <p>Préparation intensive aux présentations, développement de compétences oratoires et techniques de persuasion pour convaincre les investisseurs.</p>
+            </div>
+            
+            <div class="activity-item">
+              <h4>🤝 Networking</h4>
+              <p>Rencontres privilégiées avec des entrepreneurs expérimentés, investisseurs et mentors du monde des affaires et de l'impact social.</p>
+            </div>
+            
+            <div class="activity-item">
+              <h4>🌍 Projets Sociaux</h4>
+              <p>Développement et mise en œuvre de solutions innovantes pour créer un impact positif sur les communautés et l'environnement.</p>
+            </div>
+            
+            <div class="activity-item">
+              <h4>🏅 Préparation Compétition</h4>
+              <p>Coaching intensif et personnalisé pour préparer les équipes à la compétition Hult Prize et maximiser leurs chances de succès.</p>
+            </div>
+          </div>
+          
+          <!-- Galerie Photos -->
+          <div class="detail-section">
+            <h3>📸 Galerie Photos</h3>
+            <div class="club-gallery">
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/38.jpg" alt="Formation Hult Prize" onerror="this.src='../assets/images/comite/hultprize.jpg'">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/39.jpg" alt="Pitch Session" onerror="this.src='../assets/images/comite/hultprize.jpg'">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/40.jpg" alt="Équipe Hult Prize" onerror="this.src='../assets/images/comite/hultprize.jpg'">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/41.jpg" alt="Compétition" onerror="this.src='../assets/images/comite/hultprize.jpg'">
+              </div>
+            </div>
+          </div>
+          
+          <div class="detail-section">
+            <h3>🚀 Changez le Monde</h3>
+            <p>
+              Si vous rêvez de changer le monde et de créer un impact positif tout en développant vos compétences entrepreneuriales, le Club Hult Prize est fait pour vous. Rejoignez une communauté passionnée et ambitieuse qui transforme les idées en solutions concrètes !
+            </p>
+          </div>
+          
+          
+          <div class="detail-cta">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSefFtRfHdj7hcO7R_ykY_oze5Ohi3KfmLQyhN_egV6RI0BKuw/viewform?usp=header" class="register-btn">
+              <i class="fas fa-trophy"></i>
+              S'inscrire à ce club
+            </a>
+            <div class="social-links" style="margin-top: 20px; text-align: center;">
+              <a href="https://www.instagram.com/hult.semlalia.impact" class="instagram-link" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(131, 58, 180, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(131, 58, 180, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(131, 58, 180, 0.3)'">
+                <i class="fab fa-instagram" style="font-size: 18px;"></i>
+                Suivez-nous sur Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h1 class="logo">
+            <a href="../index.html">Semaine d'<span>Intégration</span></a>
+          </h1>
+        </div>
+        <div class="footer-right">
+          <p>&copy; 2025 Semaine d'Intégration FSSM. Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
