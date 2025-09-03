@@ -1303,6 +1303,28 @@ body {
   font-weight: 500;
 }
 
+/* Club Button Styles */
+.club-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-color);
+}
+
+.club-btn:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
 .speaker-details {
   display: flex;
   flex-direction: column;
