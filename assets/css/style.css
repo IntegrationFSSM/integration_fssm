@@ -1256,6 +1256,10 @@ body {
   padding: 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .speaker-card:hover {
@@ -1271,6 +1275,13 @@ body {
   margin: 0 auto 20px;
   border: 5px solid rgba(26, 95, 122, 0.1);
   transition: all 0.3s ease;
+}
+
+.activity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .speaker-image-circle img {
@@ -1303,6 +1314,25 @@ body {
   font-weight: 500;
 }
 
+.activity-details {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.activity-details p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.activity-details i {
+  margin-right: 8px;
+  color: var(--secondary-color);
+  width: 16px;
+}
+
 /* Club Button Styles */
 .club-btn {
   display: inline-block;
@@ -1323,6 +1353,201 @@ body {
   border-color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+/* Laureats Section Styles */
+.laureats {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.laureats-section {
+  margin-bottom: 60px;
+}
+
+.laureats-subtitle {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  position: relative;
+}
+
+.laureats-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.laureats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.laureats-grid.excellence {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.laureat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.laureat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.laureat-card.excellence::before {
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+}
+
+.laureat-card.master::before {
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+}
+
+.laureat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.laureat-rank {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.laureat-rank.excellence {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.laureat-rank.master {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  font-size: 1.2rem;
+}
+
+.laureat-image-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto 20px;
+  border: 4px solid rgba(45, 90, 160, 0.2);
+  transition: all 0.3s ease;
+}
+
+.laureat-card.excellence .laureat-image-circle {
+  border-color: rgba(255, 215, 0, 0.3);
+  width: 130px;
+  height: 130px;
+}
+
+.laureat-card.master .laureat-image-circle {
+  border-color: rgba(139, 92, 246, 0.3);
+  width: 130px;
+  height: 130px;
+}
+
+.laureat-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.laureat-card:hover .laureat-image-circle {
+  border-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.laureat-card:hover .laureat-image-circle img {
+  transform: scale(1.1);
+}
+
+.laureat-info {
+  margin-top: 15px;
+}
+
+.laureat-name {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.laureat-card.excellence .laureat-name {
+  color: #b8860b;
+}
+
+.laureat-card.master .laureat-name {
+  color: #8b5cf6;
+}
+
+.laureat-filiere {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.laureat-mention {
+  font-size: 0.9rem;
+  color: #28a745;
+  font-weight: 500;
+  padding: 5px 10px;
+  background: rgba(40, 167, 69, 0.1);
+  border-radius: 15px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .laureats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .laureat-card {
+    padding: 20px;
+  }
+  
+  .laureat-image-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .laureat-card.excellence .laureat-image-circle,
+  .laureat-card.master .laureat-image-circle {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .speaker-details {

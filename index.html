@@ -43,8 +43,12 @@
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
           <li><a href="#home" class="navbar-link">Acceuil</a></li>
+          <li><a href="#programme" class="navbar-link">Programme</a></li>
           <li><a href="#about" class="navbar-link">À propos</a></li>
           <li><a href="#clubs" class="navbar-link">Clubs</a></li>
+          <li><a href="#activites" class="navbar-link">Activités</a></li>
+          <li><a href="#avis" class="navbar-link">Avis</a></li>
+          <li><a href="#laureats" class="navbar-link">Lauréats</a></li>
           <li><a href="#comite" class="navbar-link">Direction</a></li>
           <li><a href="#contact" class="navbar-link">Contact</a></li>
         </ul>
@@ -71,9 +75,14 @@
               <ion-icon name="location-outline"></ion-icon>
               Faculté des Sciences Semlalia Marrakech
             </div>
-            <a href=".\assets\pdf\ARTICLE 1_Offre de formation 2025-2026 DB.pdf" class="hero-cta">
-              Découvrir l'offre de formation
-            </a>
+            <div class="hero-buttons" style="display: flex; gap: 15px; flex-wrap: wrap;">
+              <a href=".\assets\pdf\ARTICLE 1_Offre de formation 2025-2026 DB.pdf" class="hero-cta">
+                Découvrir l'offre de formation
+              </a>
+              <a href="#activites" class="hero-cta" style="background: #ff6b6b;">
+                Participer
+              </a>
+            </div>
           </div>
           <div class="hero-image">
             <div class="slider-container" id="imageSlider">
@@ -110,6 +119,43 @@
             </p>
             <p class="about-description">
               Le plus important ? Tu vas rencontrer plein de nouvelles personnes et peut-être même tes futurs meilleurs amis d'université ! Alors n'hésite pas, viens nous rejoindre pour bien démarrer cette belle aventure à la FSSM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Programme -->
+    <section class="programme" id="programme">
+      <div class="container">
+        <h2 class="section-title">Programme des Journées d'Intégration</h2>
+        <div class="programme-content">
+          
+          <div class="programme-header" style="text-align: center; margin-bottom: 30px;">
+            <h3 style="color: #1a5f7a; margin-bottom: 15px;">📚 Consultez le Programme Complet</h3>
+            <p style="color: #666; font-size: 1.1rem;">Découvrez tous les détails du programme des journées d'intégration</p>
+          </div>
+          
+          <div class="pdf-viewer-container" style="margin-bottom: 30px;">
+            <iframe 
+              src="assets/pdf/Dépl-Journées d'integration sept2025_compressed.pdf" 
+              width="100%" 
+              height="600px" 
+              style="border: 2px solid #e1e5e9; border-radius: 10px;"
+              title="Programme des Journées d'Intégration">
+              <p>Votre navigateur ne supporte pas l'affichage des PDF. 
+                <a href="assets/pdf/Dépl-Journées d'integration sept2025_compressed.pdf" download>Télécharger le PDF</a>
+              </p>
+            </iframe>
+          </div>
+          
+          <div class="programme-actions" style="text-align: center;">
+            <a href="assets/pdf/Dépl-Journées d'integration sept2025_compressed.pdf" 
+               download="Programme_Integration_FSSM_2025.pdf" 
+               class="club-btn" 
+               style="background: #1a5f7a; color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; display: inline-flex; align-items: center; gap: 10px; font-weight: 600; transition: all 0.3s ease;">
+              <i class="fas fa-download"></i>
+              Télécharger le Programme
+            </a>
           </div>
         </div>
       </div>
@@ -293,6 +339,503 @@
       </div>
     </section>
 
+    <!-- Section Activités d'Intégration -->
+    <section class="activites" id="activites">
+      <div class="container">
+        <h2 class="section-title">Activités d'Intégration & Compétitions</h2>
+        <p class="section-description">Participez aux activités spécialement conçues pour votre intégration et découverte de la FSSM</p>
+        
+        <div class="speakers-grid">
+          <!-- Visite Guidée -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle activity-icon">
+              <i class="fas fa-university" style="font-size: 4rem; color: #1a5f7a;"></i>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Visite Guidée de la FSSM</h3>
+              <p class="speaker-name">Découvrez tous les départements, laboratoires et espaces de la faculté avec nos guides expérimentés.</p>
+              <a href="activities/visite-guidee.html" class="club-btn">S'inscrire</a>
+            </div>
+          </div>
+          
+          <!-- Tournoi d'Échecs -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle activity-icon">
+              <i class="fas fa-chess" style="font-size: 4rem; color: #1a5f7a;"></i>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Tournoi d'Échecs des Nouveaux Bacheliers</h3>
+              <p class="speaker-name">Compétition amicale d'échecs pour créer des liens entre les nouveaux étudiants.</p>
+              <a href="activities/tournoi-echecs.html" class="club-btn">Participer</a>
+            </div>
+          </div>
+          
+          <!-- Compétition Théâtre -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle activity-icon">
+              <i class="fas fa-theater-masks" style="font-size: 4rem; color: #1a5f7a;"></i>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Compétition de Théâtre</h3>
+              <p class="speaker-name">Exprimez votre créativité et vos talents artistiques dans une compétition théâtrale.</p>
+              <a href="activities/competition-theatre.html" class="club-btn">Participer</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Avis -->
+    <section class="avis" id="avis" style="padding: 80px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+      <div class="container">
+        <h2 class="section-title">Donnez Votre Avis</h2>
+        <p class="section-description">Partagez votre expérience pour aider les futurs étudiants</p>
+        
+        <div class="speakers-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto;">
+          <!-- Carte Avis Semaine d'Inscription -->
+          <div class="speaker-card" style="min-height: 400px;">
+            <div class="speaker-image-circle activity-icon">
+              <i class="fas fa-clipboard-list" style="font-size: 4rem; color: #1a5f7a;"></i>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Semaine d'Inscription</h3>
+              <p class="speaker-name">Partagez votre expérience sur le processus d'inscription, l'accueil et l'organisation administrative.</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgthEvc2L7E5plX1NEQgvZXmzXPaC04GJiE5E1GK48MFALiQ/viewform?usp=header" class="club-btn">Soumettre votre avis</a>
+            </div>
+          </div>
+
+          <!-- Carte Avis Semaine d'Intégration -->
+          <div class="speaker-card" style="min-height: 400px;">
+            <div class="speaker-image-circle activity-icon">
+              <i class="fas fa-users" style="font-size: 4rem; color: #1a5f7a;"></i>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Semaine d'Intégration</h3>
+              <p class="speaker-name">Donnez votre avis sur les activités d'intégration, les compétitions et la découverte de la faculté.</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqF7dHYV8nVuChF4JP1i0HxR4Dq7cU8Jv1hHA_NtiEtKcZmQ/viewform?usp=header" class="club-btn">Soumettre votre avis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Nos Lauréats -->
+    <section class="laureats" id="laureats">
+      <div class="container">
+        <h2 class="section-title">Nos Lauréats 2024-2025</h2>
+        <p class="section-description">Félicitations à nos étudiants d'excellence qui ont brillé par leurs performances académiques durant l'année universitaire 2024-2025</p>
+        
+        <!-- Licence -->
+        <div class="laureats-section">
+          <h3 class="laureats-subtitle">🎓 Licence - Majors de Promotion</h3>
+          <div class="laureats-grid">
+            <!-- SMA -->
+            <div class="laureat-card">
+              <div class="laureat-rank">1er</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="1er SMA" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">EL HAKIKI AYA</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences Mathématiques Appliquées</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">2ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="2ème SMA" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BETKOU AIME SHAMY</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences Mathématiques Appliquées</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">3ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="3ème SMA" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">EL RHAZI ABDERRAHIM</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences Mathématiques Appliquées</p>
+              </div>
+            </div>
+
+            <!-- SMC -->
+            <div class="laureat-card">
+              <div class="laureat-rank">1er</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="1er SMC" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">TOULOUTI MARIAM</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Matière Chimie</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">2ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="2ème SMC" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">CHTIOUI ABDELKARIM</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Matière Chimie</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">3ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="3ème SMC" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">HALHAMDA MERIEM</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Matière Chimie</p>
+              </div>
+            </div>
+
+            <!-- SMI -->
+            <div class="laureat-card">
+              <div class="laureat-rank">1er</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="1er SMI" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">NACIRI KHADIJA</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences Mathématiques et Informatique</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">2ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="2ème SMI" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">OUMANSOUR ABDELLATIF</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences Mathématiques et Informatique</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">3ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="3ème SMI" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">MOUFAKKIR ZOUBAIDA</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences Mathématiques et Informatique</p>
+              </div>
+            </div>
+
+            <!-- SMP -->
+            <div class="laureat-card">
+              <div class="laureat-rank">1er</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="1er SMP" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">EL HAMMOU ALI MERIAM</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Matière Physique</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">2ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="2ème SMP" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">OUANASSI RACHID</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Matière Physique</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">3ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="3ème SMP" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BOULADIANE ABDELKARIM</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Matière Physique</p>
+              </div>
+            </div>
+
+            <!-- STU -->
+            <div class="laureat-card">
+              <div class="laureat-rank">1er</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="1er STU" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">ISHIMWE HERVE</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Terre et de l'Univers</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">2ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="2ème STU" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">EL MOURID YOUSSEF</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Terre et de l'Univers</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">3ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="3ème STU" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">TOURE LEILA NANCI</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Terre et de l'Univers</p>
+              </div>
+            </div>
+
+            <!-- SVI -->
+            <div class="laureat-card">
+              <div class="laureat-rank">1er</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="1er SVI" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">OUNNIT AYA</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Vie</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">2ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="2ème SVI" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BENITSIAFANTOKA HELIEN</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Vie</p>
+              </div>
+            </div>
+            
+            <div class="laureat-card">
+              <div class="laureat-rank">3ème</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="3ème SVI" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">NOUICHEK OUMAIMA</h4>
+                <p class="laureat-filiere">Licence Fondamentale en Sciences de la Vie</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Licence d'Excellence -->
+        <div class="laureats-section">
+          <h3 class="laureats-subtitle">🏆 Licence d'Excellence - Majors de Filière</h3>
+          <div class="laureats-grid excellence">
+            <div class="laureat-card excellence">
+              <div class="laureat-rank excellence">🥇</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="LPE 3EV" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">EL AKHAL NABIL</h4>
+                <p class="laureat-filiere">Licence Parcours d'Excellence en Efficacité Énergétique et Énergies Vertes</p>
+              </div>
+            </div>
+
+            <div class="laureat-card excellence">
+              <div class="laureat-rank excellence">🥇</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="LPE AMQ" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BOUMALEK NOUHAILA</h4>
+                <p class="laureat-filiere">Licence Parcours d'Excellence en Analyse, Métrologie & Qualité</p>
+              </div>
+            </div>
+
+            <div class="laureat-card excellence">
+              <div class="laureat-rank excellence">🥇</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="LPE ICBTP" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">LMORABIT FATIMA-ZAHRA</h4>
+                <p class="laureat-filiere">Licence Parcours d'Excellence en Ingénierie et Conduite des Bâtiments et Travaux Publics</p>
+              </div>
+            </div>
+
+            <div class="laureat-card excellence">
+              <div class="laureat-rank excellence">🥇</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="LPE ST-DESS" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">HRIKANE CHAIMAE</h4>
+                <p class="laureat-filiere">Licence Parcours d'Excellence en Sciences et Techniques de Dessalement des Eaux</p>
+              </div>
+            </div>
+
+            <div class="laureat-card excellence">
+              <div class="laureat-rank excellence">🥇</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="LPE VALDEC" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">FAOUZI SAIDA</h4>
+                <p class="laureat-filiere">Licence Parcours d'Excellence en Technologies de Traitement et Valorisation des Déchets Liquides et Solides</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master -->
+        <div class="laureats-section">
+          <h3 class="laureats-subtitle">🎖️ Master - Majors de Promotion</h3>
+          <div class="laureats-grid">
+            <div class="laureat-card master">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="Majorant Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">AIT MOHAMED FIRDAOUS</h4>
+                <p class="laureat-filiere">Master Sciences de Données</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="2ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">JAOUAR MARIA</h4>
+                <p class="laureat-filiere">Master Ingénierie Systèmes d'Informations</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="3ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">AOUTAR TOUFIK</h4>
+                <p class="laureat-filiere">Master Contrôle, Informatique Industrielle, Signaux et Systèmes</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="4ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BAJDOU ZAKARIA</h4>
+                <p class="laureat-filiere">Master Énergétique et Environnement</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="5ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">YASSYN HICHAM</h4>
+                <p class="laureat-filiere">Master Sciences Mathématiques et Applications</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="6ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">HOUSSANE MERIEM</h4>
+                <p class="laureat-filiere">Master Chimie des Matériaux Organique et Inorganique</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="7ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BERKACH ZINEB</h4>
+                <p class="laureat-filiere">Master COSIS</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="8ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">FARS SOUFIANE</h4>
+                <p class="laureat-filiere">Master Ingénierie de la Métrologie et de la Qualité</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="9ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">BENFADMA NAWAL</h4>
+                <p class="laureat-filiere">Master BIOMAG</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="10ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">ELBOUHALI KHADIJA</h4>
+                <p class="laureat-filiere">Master BIOCLIMAD</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/femme.png" alt="11ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">JAMMAT KHAOULA</h4>
+                <p class="laureat-filiere">Master Géorisques, Géomatique, Géomatériaux et Géoenvironnement</p>
+              </div>
+            </div>
+
+            <div class="laureat-card">
+              <div class="laureat-rank master">👑</div>
+              <div class="laureat-image-circle">
+                <img src="assets/images/comite/homme.png" alt="12ème Master" onerror="this.src='assets/images/comite/default-student.jpg'">
+              </div>
+              <div class="laureat-info">
+                <h4 class="laureat-name">SOUFIANE AYOUBE</h4>
+                <p class="laureat-filiere">Master Géosciences Appliquées aux Ressources Minérales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     
     <!-- Section Direction Générale -->

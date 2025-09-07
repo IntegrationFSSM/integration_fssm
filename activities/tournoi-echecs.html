@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournoi d'Échecs - FSSM</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .chess-section {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
+    .tournament-details {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .tournament-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .tournament-header h1 {
+      color: #1a5f7a;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .info-block {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+    .info-block h2 {
+      color: #ff6b6b;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    .info-block ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    .info-block ul li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .info-block ul li:before {
+      content: "♟";
+      position: absolute;
+      left: -20px;
+      color: #1a5f7a;
+    }
+    .registration-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+    .registration-btn:hover {
+      background-color: #ee5a52;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="../index.html">Integration <span>FSSM</span></a>
+      </h1>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="../index.html#home" class="navbar-link">Accueil</a></li>
+          <li><a href="../index.html#about" class="navbar-link">À propos</a></li>
+          <li><a href="../index.html#clubs" class="navbar-link">Clubs</a></li>
+          <li><a href="../index.html#activites" class="navbar-link">Activités</a></li>
+          <li><a href="../index.html#avis" class="navbar-link">Avis</a></li>
+          <li><a href="../index.html#laureats" class="navbar-link">Lauréats</a></li>
+          <li><a href="../index.html#comite" class="navbar-link">Direction</a></li>
+          <li><a href="../index.html#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <!-- Breadcrumb Navigation -->
+    <section class="breadcrumb" style="background: #f8f9fa; padding: 15px 0; border-bottom: 1px solid #e1e5e9;">
+      <div class="container">
+        <nav style="font-size: 14px; color: #666;">
+          <a href="../index.html" style="color: #1a5f7a; text-decoration: none;">Accueil</a>
+          <span style="margin: 0 8px; color: #999;">/</span>
+          <a href="../index.html#activites" style="color: #1a5f7a; text-decoration: none;">Compétitions et Activités</a>
+          <span style="margin: 0 8px; color: #999;">/</span>
+          <span style="color: #333; font-weight: 500;">Tournoi d'Échecs FSSM</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Contenu de la page détaillée -->
+    <section class="chess-section">
+      <div class="container">
+        <div class="tournament-details">
+          <div class="tournament-header" style="text-align: center; margin-bottom: 30px;">
+            <div class="activity-icon-large" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; border: 5px solid rgba(26, 95, 122, 0.1);">
+              <i class="fas fa-chess" style="font-size: 3rem; color: #1a5f7a;"></i>
+            </div>
+            <h1>TOURNOI D'ÉCHECS</h1>
+            <p style="font-size: 1.5rem; font-weight: 600; color: #1a5f7a; text-align: center; margin: 20px 0;">
+              12 Septembre 2025 - Journée Complète
+            </p>
+            <div style="max-width: 700px; margin: 20px auto; text-align: center;">
+              <h3 style="color: #1a5f7a; margin-bottom: 20px; font-size: 1.4rem;">9h - 17h: Tournoi d'Échecs</h3>
+              <p style="font-size: 1.2rem; line-height: 1.8; color: #666; margin-bottom: 15px;">
+                Une compétition amicale d'échecs organisée sur une journée complète pour créer des liens entre les nouveaux étudiants. Tous les niveaux sont acceptés, du débutant au joueur expérimenté.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-block" style="text-align: center;">
+            <h2>Inscription</h2>
+            <p>Réservez votre place pour le tournoi du 12 septembre 2025</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScUI5JjSSKC1hmVBpkG3jjWwRLY8oGPI6gpX5BUV7cuL3yblw/viewform?usp=header" class="registration-btn">S'inscrire au tournoi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h1 class="logo">
+            <a href="../index.html">Semaine d'<span>Intégration</span></a>
+          </h1>
+        </div>
+        <div class="footer-right">
+          <p>&copy; 2025 Semaine d'Intégration FSSM. Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

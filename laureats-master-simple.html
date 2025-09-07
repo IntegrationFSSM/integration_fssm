@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauréats Master 2024-2025 - FSSM</title>
+    <style>
+        @page {
+            size: A3;
+            margin: 30mm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: #2c3e50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        
+        .laureats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            justify-items: center;
+            margin: 50px 0;
+        }
+        
+        .laureat-item {
+            text-align: center;
+            max-width: 200px;
+        }
+        
+        .laureat-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #9b59b6;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            position: relative;
+        }
+        
+        .laureat-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .rank-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #9b59b6;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .laureat-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 10px 0 5px;
+            line-height: 1.2;
+        }
+        
+        .laureat-filiere {
+            font-size: 11px;
+            color: #7f8c8d;
+            line-height: 1.3;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">FSSM</div>
+        <h1>Lauréats Master 2024-2025</h1>
+        <p>Faculté des Sciences Semlalia - Marrakech</p>
+    </div>
+
+    <div class="laureats-grid">
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/vitalis.jpg" alt="AIT MOHAMED FIRDAOUS" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">AIT MOHAMED FIRDAOUS</div>
+            <div class="laureat-filiere">SD</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/12.png" alt="JAOUAR MARIA" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">JAOUAR MARIA</div>
+            <div class="laureat-filiere">ISI</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/Alumni.jpg" alt="AOUTAR TOUFIK" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">AOUTAR TOUFIK</div>
+            <div class="laureat-filiere">C2I2S</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/Myahmed.jpg" alt="BAJDOU ZAKARIA" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">BAJDOU ZAKARIA</div>
+            <div class="laureat-filiere">EE</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/NOI.jpg" alt="YASSYN HICHAM" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">YASSYN HICHAM</div>
+            <div class="laureat-filiere">SMA</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/adahchour.jpg" alt="HOUSSANE MERIEM" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">HOUSSANE MERIEM</div>
+            <div class="laureat-filiere">CMI</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/bouziane.jpg" alt="BERKACH ZINEB" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">BERKACH ZINEB</div>
+            <div class="laureat-filiere">COSIS</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/chessclubfssm.jpg" alt="FARS SOUFIANE" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">FARS SOUFIANE</div>
+            <div class="laureat-filiere">IMQ</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/chorale.jpg" alt="BENFADMA NAWAL" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">BENFADMA NAWAL</div>
+            <div class="laureat-filiere">BIOMAG</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/elmoudden.png" alt="ELBOUHALI KHADIJA" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">ELBOUHALI KHADIJA</div>
+            <div class="laureat-filiere">BIOCLIMAD</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/enactus.jpg" alt="JAMMAT KHAOULA" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">JAMMAT KHAOULA</div>
+            <div class="laureat-filiere">4GEO</div>
+        </div>
+
+        <div class="laureat-item">
+            <div class="laureat-image">
+                <div class="rank-badge">👑</div>
+                <img src="assets/images/comite/eves.jpg" alt="SOUFIANE AYOUBE" onerror="this.src='assets/images/comite/default-student.jpg'">
+            </div>
+            <div class="laureat-name">SOUFIANE AYOUBE</div>
+            <div class="laureat-filiere">GARMINE</div>
+        </div>
+    </div>
+</body>
+</html>
