@@ -4,7 +4,20 @@ var THEME_KEY = 'fssm-theme';
 var LANG_KEY = 'fssm-lang';
 var LANGS = ['fr', 'en', 'ar'];
 
-var I18N = {
+function mergeClubI18n(base) {
+  var extra = window.CLUB_I18N;
+  if (!extra) return base;
+  LANGS.forEach(function (lang) {
+    if (extra[lang]) {
+      Object.keys(extra[lang]).forEach(function (key) {
+        base[lang][key] = extra[lang][key];
+      });
+    }
+  });
+  return base;
+}
+
+var I18N = mergeClubI18n({
   fr: {
     'title.home': 'Clubs FSSM - Découvrir les clubs',
     'nav.home': 'Accueil',
@@ -158,7 +171,7 @@ var I18N = {
     'fluventa.joinTitle': 'انضم إلينا',
     'fluventa.join': 'انضم إلى فلوينتا للمناظرة والبودكاست والخطابة: عبّر عن أفكارك، اكتسب الثقة، وتعلّم التواصل بشكل أفضل.'
   }
-};
+});
 
 function getTheme() {
   try {
@@ -195,6 +208,9 @@ function applyTheme(theme) {
 }
 
 function applyLang(lang) {
+  if (window.CLUB_I18N) {
+    mergeClubI18n(I18N);
+  }
   document.documentElement.setAttribute('lang', lang);
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   document.querySelectorAll('[data-i18n]').forEach(function (el) {

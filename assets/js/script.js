@@ -238,24 +238,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   const modalContainer = document.querySelector('.modal-container');
-  modalContainer.addEventListener('click', function(e) {
-    if (e.target === this) {
-      closeModal();
-    }
-  });
+  if (modalContainer) {
+    modalContainer.addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  }
 });
 
 // Gestion du filtrage des versions
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialiser MicroModal
-  MicroModal.init({
-    openTrigger: 'data-modal-trigger',
-    closeTrigger: 'data-micromodal-close',
-    disableScroll: true,
-    disableFocus: false,
-    awaitOpenAnimation: true,
-    awaitCloseAnimation: true
-  });
+  if (typeof MicroModal !== 'undefined') {
+    MicroModal.init({
+      openTrigger: 'data-modal-trigger',
+      closeTrigger: 'data-micromodal-close',
+      disableScroll: true,
+      disableFocus: false,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true
+    });
+  }
 
   // Gestion des versions dans les modals
   document.querySelectorAll('.version-container').forEach(container => {
@@ -324,9 +327,10 @@ function changeVersion(btn, versionNum) {
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', function() {
-  // Activer la première version par défaut
-  document.querySelector('.tab-content').classList.add('active');
-  document.querySelector('.tab-btn').classList.add('active');
+  const tabContent = document.querySelector('.tab-content');
+  const tabBtn = document.querySelector('.tab-btn');
+  if (tabContent) tabContent.classList.add('active');
+  if (tabBtn) tabBtn.classList.add('active');
 });
 
 // Gestion du show more pour les groupes
