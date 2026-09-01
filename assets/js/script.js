@@ -53,28 +53,35 @@ if (menuToggle && navbar) {
 
 window.addEventListener("scroll", function () {
   // Afficher le bouton seulement quand on scrolle vers le bas
-  if (window.scrollY > 100) {
-    goTopBtn.classList.add("active");
-  } else {
-    goTopBtn.classList.remove("active");
+  if (goTopBtn) {
+    if (window.scrollY > 100) {
+      goTopBtn.classList.add("active");
+    } else {
+      goTopBtn.classList.remove("active");
+    }
   }
 
   // Header toujours actif
-  headerElement.classList.add("active");
+  if (headerElement) {
+    headerElement.classList.add("active");
+  }
 });
 
 // Gestion du scroll vers le haut
-goTopBtn.addEventListener("click", function(e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+if (goTopBtn) {
+  goTopBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
-});
+}
 
 // Carousel automatique
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.carousel-slide');
+  if (slides.length === 0) return;
   let currentSlide = 0;
 
   function nextSlide() {
@@ -91,10 +98,14 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateHeroMargin() {
   const header = document.querySelector('.header');
   const hero = document.querySelector('.hero');
-  if (header && hero) {
-    const headerHeight = header.offsetHeight;
+  const clubs = document.querySelector('#clubs');
+  if (!header) return;
+  const headerHeight = header.offsetHeight;
+  if (hero) {
     hero.style.marginTop = `${headerHeight}px`;
     hero.style.minHeight = `calc(60vh - ${headerHeight}px)`;
+  } else if (clubs) {
+    clubs.style.paddingTop = `${headerHeight + 40}px`;
   }
 }
 
@@ -105,10 +116,13 @@ updateHeroMargin();
 window.addEventListener('resize', updateHeroMargin);
 
 // Mise à jour lors des changements de classe du header
-new MutationObserver(updateHeroMargin).observe(document.querySelector('.header'), {
-  attributes: true,
-  attributeFilter: ['class']
-});
+const headerForObserver = document.querySelector('.header');
+if (headerForObserver) {
+  new MutationObserver(updateHeroMargin).observe(headerForObserver, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+}
 
 // Gestion du Show More/Less pour l'équipe
 document.addEventListener('DOMContentLoaded', function() {
