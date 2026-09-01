@@ -10,12 +10,26 @@
     gtag('config', 'G-3JLZ805P6F');
   </script>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('fssm-theme') || 'light';
+        var lang = localStorage.getItem('fssm-lang') || 'fr';
+        document.documentElement.classList.add('i18n-pending');
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('lang', lang === 'ar' ? 'ar' : lang);
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      } catch (e) {}
+    })();
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
   <title>Club Débat - Clubs FSSM</title>
   
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
   
   <style>
     .detail-content {
@@ -76,7 +90,7 @@
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -86,6 +100,16 @@
       <h1 class="logo">
         <a href="../index.html">Clubs <span>FSSM</span></a>
       </h1>
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Langue">
+          <button type="button" class="lang-btn" data-set-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-set-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-set-lang="ar">AR</button>
+        </div>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Changer de thème">
+          <i class="fas fa-moon" data-theme-icon></i>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -93,9 +117,9 @@
     <section class="breadcrumb" style="background: #f8f9fa; padding: 15px 0; border-bottom: 1px solid #e1e5e9;">
       <div class="container">
         <nav style="font-size: 14px; color: #666;">
-          <a href="../index.html" style="color: #1a5f7a; text-decoration: none;">Accueil</a>
+          <a href="../index.html" style="color: #1a5f7a; text-decoration: none;" data-i18n="nav.home">Accueil</a>
           <span style="margin: 0 8px; color: #999;">/</span>
-          <a href="../index.html#clubs" style="color: #1a5f7a; text-decoration: none;">Clubs</a>
+          <a href="../index.html#clubs" style="color: #1a5f7a; text-decoration: none;" data-i18n="nav.clubs">Clubs</a>
           <span style="margin: 0 8px; color: #999;">/</span>
           <span style="color: #333; font-weight: 500;">Club Débat</span>
         </nav>
@@ -149,9 +173,9 @@
           <div class="detail-cta">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMKvpOzgEVPipHTpOFB5D4Pwy8NPso56Ta6B8WUxO3iBjobw/viewform" class="register-btn" target="_blank" rel="noopener">
               <i class="fas fa-microphone"></i>
-              S'inscrire à ce club
+              <span data-i18n="register">S'inscrire à ce club</span>
             </a>
-            <p class="coming-soon" style="margin-top: 20px;">Les réseaux sociaux seront bientôt disponibles.</p>
+            <p class="coming-soon" style="margin-top: 20px;"><span data-i18n="comingSoon">Les réseaux sociaux seront bientôt disponibles.</span></p>
           </div>
         </div>
       </div>
@@ -167,7 +191,7 @@
           </h1>
         </div>
         <div class="footer-right">
-          <p>&copy; 2026 Clubs FSSM. Tous droits réservés.</p>
+          <p>&copy; 2026 Clubs FSSM. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
         </div>
       </div>
     </div>
@@ -175,6 +199,7 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../assets/js/ui.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
 </html>

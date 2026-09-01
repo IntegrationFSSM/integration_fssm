@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-i18n-title="title.home">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JLZ805P6F"></script>
   <script>
@@ -10,16 +10,30 @@
     gtag('config', 'G-3JLZ805P6F');
   </script>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('fssm-theme') || 'light';
+        var lang = localStorage.getItem('fssm-lang') || 'fr';
+        document.documentElement.classList.add('i18n-pending');
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('lang', lang === 'ar' ? 'ar' : lang);
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      } catch (e) {}
+    })();
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
   <title>Clubs FSSM - Découvrir les clubs</title>
   
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/theme.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,6 +46,16 @@
       <h1 class="logo">
         <a href="#">Clubs <span>FSSM</span></a>
       </h1>
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Langue">
+          <button type="button" class="lang-btn" data-set-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-set-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-set-lang="ar">AR</button>
+        </div>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Changer de thème">
+          <i class="fas fa-moon" data-theme-icon></i>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -39,8 +63,8 @@
     <!-- Section Clubs -->
     <section class="competitions" id="clubs">
       <div class="container">
-        <h2 class="section-title">Découvrir les clubs FSSM</h2>
-        <p class="section-description">Découvrez les différents clubs de la FSSM pour enrichir votre vie étudiante</p>
+        <h2 class="section-title" data-i18n="home.title">Découvrir les clubs FSSM</h2>
+        <p class="section-description" data-i18n="home.desc">Découvrez les différents clubs de la FSSM pour enrichir votre vie étudiante</p>
         
         <div class="speakers-grid">
           <!-- Club IT -->
@@ -50,8 +74,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">IT Club</h3>
-              <p class="speaker-name">Rejoignez le club informatique pour développer vos compétences en programmation et technologies.</p>
-              <a href="clubs/it-club.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.it">Rejoignez le club informatique pour développer vos compétences en programmation et technologies.</p>
+              <a href="clubs/it-club.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -62,8 +86,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">EVES</h3>
-              <p class="speaker-name">Club d'environnement pour sensibiliser à l'écologie et organiser des actions durables.</p>
-              <a href="clubs/eves.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.eves">Club d'environnement pour sensibiliser à l'écologie et organiser des actions durables.</p>
+              <a href="clubs/eves.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -74,8 +98,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Chess Club FSSM</h3>
-              <p class="speaker-name">Développez votre stratégie et participez aux compétitions d'échecs inter-universitaires.</p>
-              <a href="clubs/chess-club.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.chess">Développez votre stratégie et participez aux compétitions d'échecs inter-universitaires.</p>
+              <a href="clubs/chess-club.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -86,8 +110,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Enactus FSSM</h3>
-              <p class="speaker-name">Club d'entrepreneuriat social pour développer des projets à impact positif.</p>
-              <a href="clubs/enactus.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.enactus">Club d'entrepreneuriat social pour développer des projets à impact positif.</p>
+              <a href="clubs/enactus.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -98,8 +122,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">HEPAC</h3>
-              <p class="speaker-name">Explorez les mystères de l'univers avec le club d'astronomie et d'astrophysique.</p>
-              <a href="clubs/hepac.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.hepac">Explorez les mystères de l'univers avec le club d'astronomie et d'astrophysique.</p>
+              <a href="clubs/hepac.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -110,8 +134,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Sport Club FSSM</h3>
-              <p class="speaker-name">Participez aux activités sportives et aux compétitions pour rester en forme.</p>
-              <a href="clubs/sport-club.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.sport">Participez aux activités sportives et aux compétitions pour rester en forme.</p>
+              <a href="clubs/sport-club.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -122,8 +146,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Empreinte</h3>
-              <p class="speaker-name">Exprimez votre créativité et développez vos talents artistiques avec le club théâtre.</p>
-              <a href="clubs/empreinte.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.empreinte">Exprimez votre créativité et développez vos talents artistiques avec le club théâtre.</p>
+              <a href="clubs/empreinte.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -134,8 +158,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">RAIC</h3>
-              <p class="speaker-name">Club de robotique et intelligence artificielle pour les passionnés de technologies avancées.</p>
-              <a href="clubs/raic.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.raic">Club de robotique et intelligence artificielle pour les passionnés de technologies avancées.</p>
+              <a href="clubs/raic.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -146,8 +170,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Chorale FSSM</h3>
-              <p class="speaker-name">Rejoignez la chorale pour partager votre passion de la musique et du chant.</p>
-              <a href="clubs/chorale.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.chorale">Rejoignez la chorale pour partager votre passion de la musique et du chant.</p>
+              <a href="clubs/chorale.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -158,8 +182,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Soutien</h3>
-              <p class="speaker-name">Entraide et accompagnement des étudiants dans leur parcours académique.</p>
-              <a href="clubs/club-soutien.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.soutien">Entraide et accompagnement des étudiants dans leur parcours académique.</p>
+              <a href="clubs/club-soutien.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -170,8 +194,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Vitalis Club Santé</h3>
-              <p class="speaker-name">Promotion du bien-être et de la santé mentale et physique des étudiants.</p>
-              <a href="clubs/vitalis.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.vitalis">Promotion du bien-être et de la santé mentale et physique des étudiants.</p>
+              <a href="clubs/vitalis.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -182,8 +206,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Alumni</h3>
-              <p class="speaker-name">Réseau des anciens étudiants pour le mentoring et l'orientation professionnelle.</p>
-              <a href="clubs/alumni.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.alumni">Réseau des anciens étudiants pour le mentoring et l'orientation professionnelle.</p>
+              <a href="clubs/alumni.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -194,8 +218,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Hult Prize</h3>
-              <p class="speaker-name">Participez à la plus grande compétition d'entrepreneuriat social au monde.</p>
-              <a href="clubs/hult-prize.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.hult">Participez à la plus grande compétition d'entrepreneuriat social au monde.</p>
+              <a href="clubs/hult-prize.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
           
@@ -206,8 +230,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">NOI - Nomads of Innovation</h3>
-              <p class="speaker-name">Innovation et créativité pour développer des solutions technologiques disruptives.</p>
-              <a href="clubs/noi.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.noi">Innovation et créativité pour développer des solutions technologiques disruptives.</p>
+              <a href="clubs/noi.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -218,20 +242,20 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Agora</h3>
-              <p class="speaker-name">Espace d'échange, de culture et de prise de parole pour les étudiants de la FSSM.</p>
-              <a href="clubs/agora.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.agora">Espace d'échange, de culture et de prise de parole pour les étudiants de la FSSM.</p>
+              <a href="clubs/agora.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
           <!-- Club Fluventa -->
           <div class="speaker-card">
-            <div class="speaker-image-circle activity-icon">
-              <i class="fas fa-water" style="color: #1a7a6d;"></i>
+            <div class="speaker-image-circle" style="background: #fff;">
+              <img src="assets/images/comite/fluventa.jpg" alt="Club Fluventa" style="object-fit: contain;">
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Fluventa</h3>
-              <p class="speaker-name">Club étudiant FSSM dédié aux projets, à l'innovation et à la collaboration.</p>
-              <a href="clubs/fluventa.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.fluventa">Débat, podcast et public speaking : développez votre confiance et votre aisance à l'oral.</p>
+              <a href="clubs/fluventa.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -242,8 +266,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Débat</h3>
-              <p class="speaker-name">Développez l'éloquence, l'argumentation et la prise de parole en public.</p>
-              <a href="clubs/debat.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.debat">Développez l'éloquence, l'argumentation et la prise de parole en public.</p>
+              <a href="clubs/debat.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -254,8 +278,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Meraki Dance</h3>
-              <p class="speaker-name">Danse, expression artistique et passion : mettez du meraki dans chaque mouvement.</p>
-              <a href="clubs/meraki-dance.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.meraki">Danse, expression artistique et passion : mettez du meraki dans chaque mouvement.</p>
+              <a href="clubs/meraki-dance.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -266,8 +290,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Ayadi Alkhayr</h3>
-              <p class="speaker-name">Solidarité et actions humanitaires : des mains au service du bien commun.</p>
-              <a href="clubs/ayadi-alkhayr.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.ayadi">Solidarité et actions humanitaires : des mains au service du bien commun.</p>
+              <a href="clubs/ayadi-alkhayr.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -278,8 +302,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Mind Up</h3>
-              <p class="speaker-name">Développement personnel, mindset et bien-être pour révéler le potentiel des étudiants.</p>
-              <a href="clubs/mind-up.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.mindup">Développement personnel, mindset et bien-être pour révéler le potentiel des étudiants.</p>
+              <a href="clubs/mind-up.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -290,8 +314,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club E-Sports</h3>
-              <p class="speaker-name">Gaming compétitif, tournois et esprit d'équipe autour des sports électroniques.</p>
-              <a href="clubs/esports.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.esports">Gaming compétitif, tournois et esprit d'équipe autour des sports électroniques.</p>
+              <a href="clubs/esports.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -302,8 +326,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Pixellum</h3>
-              <p class="speaker-name">Photographie, création visuelle et arts numériques à la FSSM.</p>
-              <a href="clubs/pixellum.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.pixellum">Photographie, création visuelle et arts numériques à la FSSM.</p>
+              <a href="clubs/pixellum.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
 
@@ -314,8 +338,8 @@
             </div>
             <div class="speaker-info">
               <h3 class="speaker-talk-title">Club Rize & Speak</h3>
-              <p class="speaker-name">Langues, échange culturel et prise de parole en public.</p>
-              <a href="clubs/rize-and-speak.html" class="club-btn">Voir plus</a>
+              <p class="speaker-name" data-i18n="club.rize">Langues, échange culturel et prise de parole en public.</p>
+              <a href="clubs/rize-and-speak.html" class="club-btn" data-i18n="seeMore">Voir plus</a>
             </div>
           </div>
         </div>
@@ -338,7 +362,7 @@
           </h1>
         </div>
         <div class="footer-right">
-          <p>&copy; 2026 Clubs FSSM. Tous droits réservés.</p>
+          <p>&copy; 2026 Clubs FSSM. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
         </div>
       </div>
     </div>
@@ -347,6 +371,7 @@
   <!-- Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/ui.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
