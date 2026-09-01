@@ -45,7 +45,7 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: var(--header-height);
 }
 
