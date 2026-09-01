@@ -48,6 +48,27 @@
       margin-top: 30px;
     }
 
+
+    .register-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 35px;
+      background: var(--primary-color);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .register-btn:hover {
+      background: var(--secondary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
     .coming-soon {
       color: #666;
       font-size: 0.95rem;
@@ -126,7 +147,11 @@
           </div>
           
           <div class="detail-cta">
-            <p class="coming-soon">Les réseaux sociaux et le formulaire d'inscription seront bientôt disponibles.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtiZ3g0axlSLDguCcpNy21ixBW6FZ5VnTRxziLFnLR6T-Gnw/viewform" class="register-btn" target="_blank" rel="noopener">
+              <i class="fas fa-music"></i>
+              S'inscrire à ce club
+            </a>
+            <p class="coming-soon" style="margin-top: 20px;">Les réseaux sociaux seront bientôt disponibles.</p>
           </div>
         </div>
       </div>
