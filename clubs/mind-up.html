@@ -25,7 +25,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
-  <title>Club Mind Up - Clubs FSSM</title>
+  <title>Club MindUp - Clubs FSSM</title>
   
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -87,6 +87,28 @@
       color: #666;
       font-size: 0.95rem;
     }
+
+    .club-contact {
+      margin-top: 20px;
+    }
+
+    .club-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #1a5f7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .club-contact a:hover {
+      background: var(--secondary-color);
+      transform: translateY(-2px);
+    }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +143,7 @@
           <span style="margin: 0 8px; color: #999;">/</span>
           <a href="../index.html#clubs" style="color: #1a5f7a; text-decoration: none;" data-i18n="nav.clubs">Clubs</a>
           <span style="margin: 0 8px; color: #999;">/</span>
-          <span style="color: #333; font-weight: 500;">Club Mind Up</span>
+          <span style="color: #333; font-weight: 500;">Club MindUp</span>
         </nav>
       </div>
     </section>
@@ -129,44 +151,62 @@
     <section class="about">
       <div class="container">
         <div class="club-logo-circle" style="text-align: center; margin-bottom: 30px;">
-          <div class="speaker-image-circle activity-icon" style="width: 120px; height: 120px; margin: 0 auto;">
-            <i class="fas fa-brain" style="color: #5b4b8a;"></i>
+          <div class="speaker-image-circle" style="width: 120px; height: 120px; margin: 0 auto; background: #fff;">
+            <img src="../assets/images/comite/mindup.png" alt="Club MindUp" style="width: 100%; height: 100%; object-fit: contain;">
           </div>
         </div>
-        <h1 class="section-title" data-i18n="c.mindup.0">Club Mind Up</h1>
+        <h1 class="section-title" data-i18n="c.mindup.0">Club MindUp</h1>
         
         <div class="detail-content">
           <div class="detail-section">
-            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.mindup.1">À propos du Club Mind Up</span></h3>
+            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.mindup.1">À propos de MindUp</span></h3>
             <p data-i18n="c.mindup.2">
-              Mind Up est le club de développement personnel de la FSSM. Il accompagne les étudiants pour mieux se connaître, gérer le stress, renforcer la confiance en soi et avancer dans leurs études avec un état d'esprit positif.
+              MindUp est une aventure humaine née d'un constat simple : la réussite universitaire ne dépend pas seulement des notes, mais aussi de l'équilibre mental. Créé par des étudiants, pour les étudiants, le club vise à promouvoir le bien-être psychologique au sein de l'université et à rendre la psychologie accessible à toute la communauté universitaire.
             </p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-brain"></i> <span data-i18n="c.mindup.3">Ateliers mindset</span></h3>
-            <p data-i18n="c.mindup.4">Des séances pour travailler la motivation, la confiance et la gestion du quotidien étudiant.</p>
+            <h3><i class="fas fa-mug-hot"></i> <span data-i18n="c.mindup.3">Rencontres Coffee &amp; Psych</span></h3>
+            <p data-i18n="c.mindup.4">Des discussions informelles avec des psychologues invités, pour échanger librement et mieux comprendre le bien-être mental.</p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-spa"></i> <span data-i18n="c.mindup.5">Bien-être et équilibre</span></h3>
-            <p data-i18n="c.mindup.6">Des activités pour mieux gérer le stress, l'organisation et l'équilibre entre études et vie personnelle.</p>
+            <h3><i class="fas fa-palette"></i> <span data-i18n="c.mindup.5">Ateliers créatifs</span></h3>
+            <p data-i18n="c.mindup.6">Des sessions d'expression artistique mêlant peinture, poésie et émotions, pour mettre des mots et des formes sur ce que l'on ressent.</p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-users"></i> <span data-i18n="c.mindup.7">Coaching entre pairs</span></h3>
-            <p data-i18n="c.mindup.8">Un espace d'écoute et d'entraide entre étudiants, dans un cadre bienveillant.</p>
+            <h3><i class="fas fa-leaf"></i> <span data-i18n="c.mindup.7">Événements en plein air</span></h3>
+            <p data-i18n="c.mindup.8">Organisation d'une journée bien-être autour de la méditation et d'activités collectives, pour se ressourcer hors des salles de cours.</p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-microphone"></i> <span data-i18n="c.mindup.9">Conférences inspirantes</span></h3>
-            <p data-i18n="c.mindup.10">Des rencontres pour partager des expériences, des méthodes et des outils de développement personnel.</p>
+            <h3><i class="fas fa-comments"></i> <span data-i18n="c.mindup.9">Formations</span></h3>
+            <p data-i18n="c.mindup.10">Des formations axées sur la confiance en soi, la communication et la gestion des émotions.</p>
+          </div>
+
+          <div class="detail-section">
+            <h3><i class="fas fa-images"></i> <span data-i18n="gallery">Galerie Photos</span></h3>
+            <div class="club-gallery">
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/mindup-1.jpg" alt="MindUp - Événement">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/mindup-2.jpg" alt="MindUp - Activité">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/mindup-3.jpg" alt="MindUp - Atelier">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/mindup-4.jpg" alt="MindUp - Équipe">
+              </div>
+            </div>
           </div>
           
           <div class="detail-section">
             <h3><i class="fas fa-star"></i> <span data-i18n="c.mindup.11">Rejoignez-nous</span></h3>
             <p data-i18n="c.mindup.12">
-              Rejoignez Mind Up pour prendre soin de vous, progresser et avancer plus sereinement dans votre parcours à la FSSM.
+              Rejoignez MindUp pour prendre soin de votre équilibre mental, échanger et rendre la psychologie accessible à toute la FSSM.
             </p>
           </div>
           
@@ -175,6 +215,12 @@
               <i class="fas fa-brain"></i>
               <span data-i18n="register">S'inscrire à ce club</span>
             </a>
+            <div class="club-contact">
+              <a href="mailto:midupfssm@gmail.com">
+                <i class="fas fa-envelope"></i>
+                midupfssm@gmail.com
+              </a>
+            </div>
             <p class="coming-soon" style="margin-top: 20px;"><span data-i18n="comingSoon">Les réseaux sociaux seront bientôt disponibles.</span></p>
           </div>
         </div>

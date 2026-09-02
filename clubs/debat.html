@@ -25,7 +25,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
-  <title>Club Débat - Clubs FSSM</title>
+  <title>Debate Club FSSM - Clubs FSSM</title>
   
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -87,6 +87,28 @@
       color: #666;
       font-size: 0.95rem;
     }
+
+    .club-contact {
+      margin-top: 20px;
+    }
+
+    .club-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #1a5f7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .club-contact a:hover {
+      background: var(--secondary-color);
+      transform: translateY(-2px);
+    }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +143,7 @@
           <span style="margin: 0 8px; color: #999;">/</span>
           <a href="../index.html#clubs" style="color: #1a5f7a; text-decoration: none;" data-i18n="nav.clubs">Clubs</a>
           <span style="margin: 0 8px; color: #999;">/</span>
-          <span style="color: #333; font-weight: 500;">Club Débat</span>
+          <span style="color: #333; font-weight: 500;">Debate Club FSSM</span>
         </nav>
       </div>
     </section>
@@ -129,44 +151,60 @@
     <section class="about">
       <div class="container">
         <div class="club-logo-circle" style="text-align: center; margin-bottom: 30px;">
-          <div class="speaker-image-circle activity-icon" style="width: 120px; height: 120px; margin: 0 auto;">
-            <i class="fas fa-microphone" style="color: #8b3a3a;"></i>
+          <div class="speaker-image-circle" style="width: 120px; height: 120px; margin: 0 auto; background: #fff;">
+            <img src="../assets/images/comite/debate.png" alt="Debate Club FSSM" style="width: 100%; height: 100%; object-fit: contain;">
           </div>
         </div>
-        <h1 class="section-title" data-i18n="c.debat.0">Club Débat</h1>
+        <h1 class="section-title" data-i18n="c.debat.0">Debate Club FSSM</h1>
         
         <div class="detail-content">
           <div class="detail-section">
-            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.debat.1">À propos du Club Débat</span></h3>
+            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.debat.1">À propos du Debate Club</span></h3>
             <p data-i18n="c.debat.2">
-              Le Club Débat de la FSSM forme les étudiants à l'art oratoire, à l'argumentation et à la prise de parole en public. Que vous soyez débutant ou déjà à l'aise à l'oral, le club vous aide à structurer vos idées, à écouter l'autre et à défendre un point de vue avec clarté et respect.
+              Le Debate Club FSSM est un espace d'échange qui encourage la prise de parole, la pensée critique et la réflexion autour de sujets d'actualité, de société et de différentes problématiques. Il est composé de trois cellules : arabe, française et anglaise.
+            </p>
+            <p data-i18n="c.debat.3">
+              À travers des débats, des tables rondes et des ateliers de public speaking, le club permet à chacun de développer son aisance à l'oral, d'exprimer ses idées et d'apprendre à écouter et à argumenter.
+            </p>
+            <p data-i18n="c.debat.4">
+              Le club organise également des rencontres avec des spécialistes et des modèles inspirants, afin d'apporter un éclairage différent sur une thématique, un sujet, un fait divers ou une problématique, et d'échanger directement avec eux.
             </p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-comments"></i> <span data-i18n="c.debat.3">Entraînements de débat</span></h3>
-            <p data-i18n="c.debat.4">Des séances régulières pour pratiquer le débat, construire des arguments et répondre aux objections.</p>
+            <h3><i class="fas fa-comments"></i> <span data-i18n="c.debat.5">Débats</span></h3>
+            <p data-i18n="c.debat.6">Organisation de débats interuniversitaires et de tables rondes autour de sujets d'actualité et de société, afin de favoriser l'échange d'idées et le développement de l'esprit critique.</p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-microphone"></i> <span data-i18n="c.debat.5">Prise de parole en public</span></h3>
-            <p data-i18n="c.debat.6">Des exercices d'éloquence, d'improvisation et de présentation pour gagner en confiance.</p>
+            <h3><i class="fas fa-handshake"></i> <span data-i18n="c.debat.7">Rencontres &amp; conférences</span></h3>
+            <p data-i18n="c.debat.8">Invitation d'experts, de spécialistes et de personnalités inspirantes pour partager leur expérience et apporter un éclairage sur une thématique. L'objectif est de privilégier l'échange et le dialogue plutôt qu'une conférence classique, afin de permettre aux étudiants de questionner, réfléchir et développer leur esprit critique.</p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-trophy"></i> <span data-i18n="c.debat.7">Compétitions</span></h3>
-            <p data-i18n="c.debat.8">Participation à des joutes oratoires et à des rencontres de débat inter-clubs ou inter-universitaires.</p>
+            <h3><i class="fas fa-microphone"></i> <span data-i18n="c.debat.9">Ateliers</span></h3>
+            <p data-i18n="c.debat.10">Organisation d'ateliers au sein du club sous différentes formes : débats, tables rondes et sessions de public speaking. Ces activités permettent aux étudiants de développer leur aisance à l'oral, leur capacité d'argumentation et leur confiance en eux, au sein des cellules arabe, française et anglaise.</p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-balance-scale"></i> <span data-i18n="c.debat.9">Ateliers d'argumentation</span></h3>
-            <p data-i18n="c.debat.10">Travail sur la structure d'un discours, la rhétorique et l'écoute active.</p>
+            <h3><i class="fas fa-images"></i> <span data-i18n="gallery">Galerie Photos</span></h3>
+            <div class="club-gallery">
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/debate-1.jpg" alt="Debate Club FSSM - Rencontre">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/debate-2.jpg" alt="Debate Club FSSM - Activité">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/debate-3.jpg" alt="Debate Club FSSM - Événement">
+              </div>
+            </div>
           </div>
           
           <div class="detail-section">
             <h3><i class="fas fa-star"></i> <span data-i18n="c.debat.11">Rejoignez-nous</span></h3>
             <p data-i18n="c.debat.12">
-              Rejoignez le Club Débat pour oser prendre la parole, affûter vos arguments et représenter la FSSM.
+              Rejoignez le Debate Club FSSM : un espace pour débattre, parler, réfléchir et voir les choses autrement.
             </p>
           </div>
           
@@ -175,7 +213,18 @@
               <i class="fas fa-microphone"></i>
               <span data-i18n="register">S'inscrire à ce club</span>
             </a>
-            <p class="coming-soon" style="margin-top: 20px;"><span data-i18n="comingSoon">Les réseaux sociaux seront bientôt disponibles.</span></p>
+            <div class="club-contact">
+              <a href="mailto:debateclubfssm@gmail.com">
+                <i class="fas fa-envelope"></i>
+                debateclubfssm@gmail.com
+              </a>
+            </div>
+            <div class="social-links" style="margin-top: 20px; text-align: center;">
+              <a href="https://www.instagram.com/debateclubfssm/" class="instagram-link" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(131, 58, 180, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(131, 58, 180, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(131, 58, 180, 0.3)'">
+                <i class="fab fa-instagram" style="font-size: 18px;"></i>
+                <span data-i18n="followInstagram">Suivez-nous sur Instagram</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
