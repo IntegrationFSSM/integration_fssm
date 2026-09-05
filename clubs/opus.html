@@ -25,15 +25,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
-  <title>Chorale FSSM - Clubs FSSM</title>
+  <title>Club Opus - Clubs FSSM</title>
   
-  <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-  
-  <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/theme.css">
-  <link rel="stylesheet" href="../assets/css/style_slider.css">
   
   <style>
     .detail-content {
@@ -61,20 +57,11 @@
       line-height: 1.7;
     }
     
-    .detail-section ul {
-      margin-bottom: 15px;
-      padding-left: 20px;
-    }
-    
-    .detail-section li {
-      margin-bottom: 10px;
-    }
-    
     .detail-cta {
       text-align: center;
       margin-top: 30px;
     }
-    
+
     .register-btn {
       display: inline-flex;
       align-items: center;
@@ -94,18 +81,69 @@
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
+
+    .club-contact {
+      margin-top: 20px;
+    }
+
+    .club-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #1a5f7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .club-contact a:hover {
+      background: var(--secondary-color);
+      transform: translateY(-2px);
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .club-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      height: 180px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
   </style>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Header -->
   <header class="header" data-header>
     <div class="container">
       <h1 class="logo">
@@ -125,7 +163,6 @@
   </header>
 
   <main style="margin-top: 100px;">
-    <!-- Breadcrumb Navigation -->
     <section class="breadcrumb" style="background: #f8f9fa; padding: 15px 0; border-bottom: 1px solid #e1e5e9;">
       <div class="container">
         <nav style="font-size: 14px; color: #666;">
@@ -133,7 +170,7 @@
           <span style="margin: 0 8px; color: #999;">/</span>
           <a href="../index.html#clubs" style="color: #1a5f7a; text-decoration: none;" data-i18n="nav.clubs">Clubs</a>
           <span style="margin: 0 8px; color: #999;">/</span>
-          <span style="color: #333; font-weight: 500;">Chorale FSSM</span>
+          <span style="color: #333; font-weight: 500;">Opus FSSM</span>
         </nav>
       </div>
     </section>
@@ -141,80 +178,95 @@
     <section class="about">
       <div class="container">
         <div class="club-logo-circle" style="text-align: center; margin-bottom: 30px;">
-          <div class="speaker-image-circle" style="width: 120px; height: 120px; margin: 0 auto;">
-            <img src="../assets/images/comite/chorale.jpg" alt="Chorale FSSM" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="speaker-image-circle" style="width: 120px; height: 120px; margin: 0 auto; background: #fff;">
+            <img src="../assets/images/clubs/opus/logo.png" alt="Club Opus" style="width: 100%; height: 100%; object-fit: contain;">
           </div>
         </div>
-        <h1 class="section-title" data-i18n="c.chorale.0">Chorale FSSM</h1>
+        <h1 class="section-title" data-i18n="c.opus.0">Opus FSSM</h1>
         
         <div class="detail-content">
           <div class="detail-section">
-            <h3 data-i18n="c.chorale.1">À propos de la Chorale</h3>
-            <p data-i18n="c.chorale.2">
-              La Chorale FSSM rassemble tous les amoureux de la musique et du chant. Nous créons une harmonie parfaite entre les études scientifiques et l'expression artistique musicale.
+            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.opus.1">À propos d'Opus</span></h3>
+            <p data-i18n="c.opus.2">
+              Opus est le club de musique et des arts vivants de la FSSM. Il réunit des étudiants passionnés de chant, d'instruments et de scène, autour de deux univers complémentaires : la musique occidentale et la musique arabo-orientale. Le club offre un espace de pratique, d'apprentissage et de création artistique, où chacun peut développer sa voix, son oreille et sa confiance sur scène. Opus favorise aussi les rencontres avec d'autres clubs et associations culturelles pour construire des projets communs et des concerts collectifs. Au-delà de la musique, Opus se veut un lieu de rencontre, d'échange et d'expression ouvert à tous les étudiants de la faculté, quel que soit leur niveau.
             </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3><i class="fas fa-music"></i> <span data-i18n="c.chorale.3">Répétitions Hebdomadaires</span></h3>
-            <p data-i18n="c.chorale.4">Travail vocal et harmonie en groupe. Développez votre technique vocale et apprenez à chanter en harmonie avec d'autres passionnés.</p>
+            <h3><i class="fas fa-microphone-alt"></i> <span data-i18n="c.opus.3">Répétitions & Ateliers Vocaux</span></h3>
+            <p data-i18n="c.opus.4">
+              Séances régulières de technique vocale, solfège et travail d'ensemble, ouvertes à tous les niveaux.
+            </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3><i class="fas fa-music"></i> <span data-i18n="c.chorale.5">Concerts Universitaires</span></h3>
-            <p data-i18n="c.chorale.6">Spectacles lors d'événements universitaires et cérémonies officielles. Partagez votre talent devant un public enthousiaste.</p>
+            <h3><i class="fas fa-music"></i> <span data-i18n="c.opus.5">Concerts & Scène</span></h3>
+            <p data-i18n="c.opus.6">
+              Participation aux événements de la faculté et organisation de concerts, avec l'objectif d'un grand événement musical dans l'année.
+            </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3><i class="fas fa-microphone"></i> <span data-i18n="c.chorale.7">Formation Musicale</span></h3>
-            <p data-i18n="c.chorale.8">Techniques vocales et solfège pour tous les niveaux. Améliorez votre maîtrise musicale avec nos formateurs qualifiés.</p>
+            <h3><i class="fas fa-handshake"></i> <span data-i18n="c.opus.7">Collaborations Inter-Clubs</span></h3>
+            <p data-i18n="c.opus.8">
+              Projets communs avec d'autres clubs et associations culturelles, mêlant musiques marocaines et univers artistiques variés.
+            </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3><i class="fas fa-guitar"></i> <span data-i18n="c.chorale.9">Répertoire Varié</span></h3>
-            <p data-i18n="c.chorale.10">Classique, moderne, traditionnel marocain et international. Explorez différents styles musicaux et enrichissez votre culture artistique.</p>
+            <h3><i class="fas fa-guitar"></i> <span data-i18n="c.opus.9">Répertoire Large</span></h3>
+            <p data-i18n="c.opus.10">
+              Un travail sur plusieurs styles : musique occidentale, maqam et musique arabo-andalouse, pour un répertoire riche et varié.
+            </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3><i class="fas fa-headphones"></i> <span data-i18n="c.chorale.11">Enregistrements</span></h3>
-            <p data-i18n="c.chorale.12">Création d'albums et clips vidéo professionnels. Immortalisez vos performances et partagez votre art avec le monde.</p>
+            <h3><i class="fas fa-users-cog"></i> <span data-i18n="c.opus.11">Recrutement & Structuration</span></h3>
+            <p data-i18n="c.opus.12">
+              Un club en pleine structuration (bureau, pôles, partenariats), avec des opportunités de responsabilité pour les membres motivés.
+            </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3 data-i18n="c.chorale.13">Galerie Photos</h3>
+            <h3><i class="fas fa-images"></i> <span data-i18n="gallery">Galerie Photos</span></h3>
             <div class="club-gallery">
               <div class="gallery-item">
-                <img src="../assets/images/clubs/30.jpg" alt="Chorale - Concert">
+                <img src="../assets/images/clubs/opus/1.jpg" alt="Club Opus - Photo 1">
               </div>
               <div class="gallery-item">
-                <img src="../assets/images/clubs/31.jpg" alt="Chorale - Répétition">
+                <img src="../assets/images/clubs/opus/2.jpg" alt="Club Opus - Photo 2">
               </div>
               <div class="gallery-item">
-                <img src="../assets/images/clubs/32.jpg" alt="Chorale - Spectacle">
+                <img src="../assets/images/clubs/opus/3.jpg" alt="Club Opus - Photo 3">
               </div>
               <div class="gallery-item">
-                <img src="../assets/images/clubs/33.jpg" alt="Chorale - Spectacle">
+                <img src="../assets/images/clubs/opus/4.jpg" alt="Club Opus - Photo 4">
               </div>
             </div>
           </div>
-          
+
           <div class="detail-section">
-            <h3 data-i18n="c.chorale.14">Chantez avec nous !</h3>
-            <p data-i18n="c.chorale.15">
-              Tu aimes chanter ? La Chorale FSSM t'accueille ! Peu importe ton niveau, l'important c'est ta passion pour la musique. Nous t'aiderons à développer ta voix et à vivre des moments magiques en harmonie.
+            <h3><i class="fas fa-star"></i> <span data-i18n="c.opus.13">Rejoignez l'Aventure !</span></h3>
+            <p data-i18n="c.opus.14">
+              Rejoignez Opus pour développer votre talent musical, partager la scène et vivre une expérience artistique et humaine unique à la FSSM !
             </p>
           </div>
           
-          
           <div class="detail-cta">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepjBMyiTfgDkdvd3K2Hw_vxh_cP_S0QgzELn8dLjfVqTU9gQ/viewform" class="register-btn">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepjBMyiTfgDkdvd3K2Hw_vxh_cP_S0QgzELn8dLjfVqTU9gQ/viewform" class="register-btn" target="_blank" rel="noopener">
               <i class="fas fa-music"></i>
               <span data-i18n="register">S'inscrire à ce club</span>
             </a>
-            <div class="social-links" style="margin-top: 20px; text-align: center;">
-              <a href="https://www.instagram.com/choraleclubfssm" class="instagram-link" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(131, 58, 180, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(131, 58, 180, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(131, 58, 180, 0.3)'">
-                <i class="fab fa-instagram" style="font-size: 18px;"></i>
-                <span data-i18n="followInstagram">Suivez-nous sur Instagram</span>
+            <div class="social-buttons">
+              <a href="https://www.instagram.com/opus.fssmclub" class="instagram-link" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(131, 58, 180, 0.3);" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram (@opus.fssmclub)</span>
+              </a>
+            </div>
+            <div class="club-contact">
+              <a href="mailto:opus.fssmmusicclub@gmail.com">
+                <i class="fas fa-envelope"></i>
+                opus.fssmmusicclub@gmail.com
               </a>
             </div>
           </div>
@@ -223,7 +275,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -239,7 +290,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="../assets/js/i18n-clubs.js"></script>
