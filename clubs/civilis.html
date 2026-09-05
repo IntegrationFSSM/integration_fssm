@@ -25,7 +25,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='%23003366' d='M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v4.2c0 17.9 10.6 33.9 26.2 41.2l142.6 66.8c12.3 5.8 26.3 5.8 38.6 0l142.6-66.8c15.6-7.3 26.2-23.3 26.2-41.2v-4.2c0-32.1-9.3-62.6-25.7-88.4l57.9-20.9c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 329c-11.1 5.2-23.9 5.2-35 0L177.3 262.6 128 408z'/></svg>">
-  <title>Club Meraki Dance - Clubs FSSM</title>
+  <title>Club CIVILIS - Clubs FSSM</title>
   
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -62,7 +62,6 @@
       margin-top: 30px;
     }
 
-
     .register-btn {
       display: inline-flex;
       align-items: center;
@@ -83,26 +82,59 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .coming-soon {
-      color: #666;
-      font-size: 0.95rem;
-    }
-    
     .club-contact {
       margin-top: 20px;
-      text-align: center;
     }
+
     .club-contact a {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      color: var(--primary-color);
-      font-weight: 500;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #1a5f7a;
+      color: white;
       text-decoration: none;
-      transition: color 0.3s ease;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
     }
+
     .club-contact a:hover {
-      color: var(--secondary-color);
+      background: var(--secondary-color);
+      transform: translateY(-2px);
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .club-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      height: 180px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,7 +170,7 @@
           <span style="margin: 0 8px; color: #999;">/</span>
           <a href="../index.html#clubs" style="color: #1a5f7a; text-decoration: none;" data-i18n="nav.clubs">Clubs</a>
           <span style="margin: 0 8px; color: #999;">/</span>
-          <span style="color: #333; font-weight: 500;">Club Meraki Dance</span>
+          <span style="color: #333; font-weight: 500;">Club CIVILIS</span>
         </nav>
       </div>
     </section>
@@ -147,55 +179,90 @@
       <div class="container">
         <div class="club-logo-circle" style="text-align: center; margin-bottom: 30px;">
           <div class="speaker-image-circle" style="width: 120px; height: 120px; margin: 0 auto; background: #fff;">
-            <img src="../assets/images/clubs/MERAKI%20DANCE%20CLUB/A07A92C6-33A3-45DD-A401-07C0D2B263F6.JPG.jpeg" alt="Club Meraki Dance" style="width: 100%; height: 100%; object-fit: contain;">
+            <img src="../assets/images/clubs/cvilis/civilis%20fssm.png" alt="Club CIVILIS" style="width: 100%; height: 100%; object-fit: contain;">
           </div>
         </div>
-        <h1 class="section-title" data-i18n="c.merakidance.0">Club Meraki Dance</h1>
+        <h1 class="section-title" data-i18n="c.civilis.0">Club CIVILIS</h1>
         
         <div class="detail-content">
           <div class="detail-section">
-            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.merakidance.1">À propos de Meraki Dance</span></h3>
-            <p data-i18n="c.merakidance.2">
-              Meraki Dance est le club de danse de la FSSM. « Meraki » signifie mettre son âme, sa créativité et son amour dans ce que l'on fait. Le club accueille tous les niveaux pour danser, s'exprimer et partager la scène lors des événements de la faculté.
+            <h3><i class="fas fa-info-circle"></i> <span data-i18n="c.civilis.1">À propos du Club CIVILIS</span></h3>
+            <p data-i18n="c.civilis.2">
+              Le Club CIVILIS de la FSSM est le club incontournable pour tous les passionnés de la construction d'ouvrages. Notre ambition est de promouvoir les connaissances et compétences des étudiants dans le domaine du bâtiment et des travaux publics (BTP). Notre mission est de favoriser l’échange de savoir-faire et de créer un lien direct et solide entre les étudiants et le monde professionnel.
             </p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-music"></i> <span data-i18n="c.merakidance.3">Répétitions et chorégraphies</span></h3>
-            <p data-i18n="c.merakidance.4">Des séances pour apprendre des chorégraphies, travailler le rythme et danser en groupe.</p>
+            <h3><i class="fas fa-tools"></i> <span data-i18n="c.civilis.3">Ateliers Techniques</span></h3>
+            <p data-i18n="c.civilis.4">
+              Sessions de formation pratiques axées sur la maîtrise des logiciels de conception, ainsi que sur l'utilisation du matériel de mesure et de calcul. Développez vos compétences techniques avec des outils professionnels.
+            </p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-compact-disc"></i> <span data-i18n="c.merakidance.5">Styles variés</span></h3>
-            <p data-i18n="c.merakidance.6">Découverte de différents styles de danse, selon les envies des membres et les événements à préparer.</p>
+            <h3><i class="fas fa-handshake"></i> <span data-i18n="c.civilis.5">Conférences et Réseautage</span></h3>
+            <p data-i18n="c.civilis.6">
+              Invitation d'experts du domaine du Génie Civil pour animer des conférences et des ateliers sur des sujets spécifiques. C'est l'occasion idéale pour développer un réseau d’anciens étudiants et de partenaires industriels.
+            </p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-theater-masks"></i> <span data-i18n="c.merakidance.7">Spectacles étudiants</span></h3>
-            <p data-i18n="c.merakidance.8">Des performances lors des journées culturelles et des événements de la FSSM.</p>
+            <h3><i class="fas fa-drafting-compass"></i> <span data-i18n="c.civilis.7">Création de Mini-Projets</span></h3>
+            <p data-i18n="c.civilis.8">
+              Réalisation de projets pratiques tels que des maquettes architecturales ou structurales, et des simulations. Appliquez les nouvelles innovations du domaine et préparez-vous activement aux compétitions académiques.
+            </p>
           </div>
 
           <div class="detail-section">
-            <h3><i class="fas fa-users"></i> <span data-i18n="c.merakidance.9">Esprit d'équipe</span></h3>
-            <p data-i18n="c.merakidance.10">Un cadre convivial pour se dépenser, créer et tisser des liens entre étudiants.</p>
+            <h3><i class="fas fa-users-cog"></i> <span data-i18n="c.civilis.9">Collaborations Inter-Clubs</span></h3>
+            <p data-i18n="c.civilis.10">
+              Synergie avec d'autres clubs de la faculté pour donner vie à des projets communs d'envergure. Participez, par exemple, au projet global d’un ouvrage d’art, depuis la phase d’étude jusqu’à la planification et l’exécution.
+            </p>
           </div>
-          
+
           <div class="detail-section">
-            <h3><i class="fas fa-star"></i> <span data-i18n="c.merakidance.11">Rejoignez-nous</span></h3>
-            <p data-i18n="c.merakidance.12">
-              Rejoignez Meraki Dance, que vous dansiez déjà ou que vous ayez simplement envie d'essayer : la passion suffit.
+            <h3><i class="fas fa-hard-hat"></i> <span data-i18n="c.civilis.11">Sorties Terrain</span></h3>
+            <p data-i18n="c.civilis.12">
+              Organisation de visites de chantiers, d'entreprises et de laboratoires. Ces sorties immersives sont dédiées à la recherche sur le terrain et à l'élaboration de rapports concrets.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3><i class="fas fa-images"></i> <span data-i18n="gallery">Galerie Photos</span></h3>
+            <div class="club-gallery">
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/cvilis/1%20(1).jpeg" alt="Club CIVILIS - Photo 1">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/cvilis/2%20(1).jpeg" alt="Club CIVILIS - Photo 2">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/cvilis/4.jpeg" alt="Club CIVILIS - Photo 3">
+              </div>
+              <div class="gallery-item">
+                <img src="../assets/images/clubs/cvilis/5.jpeg" alt="Club CIVILIS - Photo 4">
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h3><i class="fas fa-star"></i> <span data-i18n="c.civilis.13">Rejoignez-nous</span></h3>
+            <p data-i18n="c.civilis.14">
+              Rejoignez le Club CIVILIS pour développer vos compétences en Génie Civil, réaliser des projets passionnants et vous connecter au monde professionnel.
             </p>
           </div>
           
           <div class="detail-cta">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtiZ3g0axlSLDguCcpNy21ixBW6FZ5VnTRxziLFnLR6T-Gnw/viewform" class="register-btn" target="_blank" rel="noopener">
-              <i class="fas fa-music"></i>
-              <span data-i18n="register">S'inscrire à ce club</span>
-            </a>
+            <div class="social-buttons">
+              <a href="https://www.instagram.com/civilis_fssm?igsi=MWxmM3AycHZxOXJxNw==" class="instagram-link" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(131, 58, 180, 0.3);" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram (@civilis_fssm)</span>
+              </a>
+            </div>
             <div class="club-contact">
-              <a href="mailto:merakidanseclub@gmail.com">
+              <a href="mailto:civilisclub@gmail.com">
                 <i class="fas fa-envelope"></i>
-                merakidanseclub@gmail.com
+                civilisclub@gmail.com
               </a>
             </div>
           </div>
